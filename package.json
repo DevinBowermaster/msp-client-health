@@ -1,0 +1,41 @@
+{
+  "name": "msp-client-health",
+  "version": "1.0.0",
+  "description": "Client satisfaction surveys and contract health for managed IT providers, in one dashboard.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Devin Bowermaster",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && vite build",
+    "start": "node dist/src/index.js",
+    "dev": "tsx watch src/index.ts",
+    "dev:web": "vite",
+    "demo": "vite build && tsx src/demo.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p web/tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "hono": "^4.13.14",
+    "jose": "^6.2.13",
+    "nodemailer": "^10.2.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oidc-client-ts": "^3.5.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
