@@ -1,4 +1,5 @@
 # MSP Client Health
+[![CI](https://github.com/DevinBowermaster/msp-client-health/actions/workflows/ci.yml/badge.svg)](https://github.com/DevinBowermaster/msp-client-health/actions/workflows/ci.yml)
 
 A dashboard for managed IT providers that puts two numbers side by side: how happy each client is, and whether their contract still makes money.
 
